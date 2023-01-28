@@ -1,0 +1,26 @@
+@media (max-width: 1000px) {
+}
+@media (max-width: 700px) {
+  .view {
+    flex-direction: column;
+    text-align: center;
+  }
+  .view-left h2{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .men p {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+}
+@media (max-width: 400px) {
+  .men img {
+    display: none;
+  }
+  .hamburger {
+    margin-top: 20px;
+  }
+}

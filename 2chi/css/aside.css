@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Mulish", sans-serif;
+  src: url(../fonts/Mulish-VariableFont_wght.ttf);
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --aside-width: 250px;
+  --logo-color: #F3D7FF;
+  --aside-color: #363740;
+  --text-color: #a4a6b3;
+  --text-hover: #9fa2b464;
+  --text-hover-left: #dde2ff;
+  --main-color: #ffffff;
+  --bgccolor-btn2:  #10CD45;
+  --main-text: black;
+  --bgccolor-btn1: #EEF2F5;
+}
+
+.dark{
+  --main-text: rgb(228, 228, 228);
+  --logo-color: #2b271c;
+  --aside-color: #f1f2f3;
+  --text-color: rgb(58, 58, 58);
+  --text-hover: #14141464;
+  --text-hover-left: #000000;
+  --main-color: #5b5b5b;
+  --bgccolor-btn2:  #4a4a4a;
+  --bgccolor-btn1: #0c0c0c;
+}
+aside {
+  position: fixed;
+  width: var(--aside-width);
+  background-color: var(--aside-color);
+  height: 100vh;
+  overflow: scroll auto;
+  transition: 0.5s;
+}
+aside::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  margin-left: 23px;
+  margin-bottom: 35px;
+  width: 250px;
+}
+.logo h3 {
+  margin-left: 18px;
+  font-family: "Mulish", sans-serif;
+  color: var(--text-color);
+}
+.logo svg{
+  fill: var(--logo-color);
+}
+.li-1 {
+  height: 56px;
+  width: 250px;
+  display: flex;
+  border-left: 3px solid rgba(255, 255, 255, 0);
+}
+.li-1 a {
+  color: var(--text-color);
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 30px;
+  display: block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+.li-1 svg {
+  fill: var(--text-color);
+  margin-left: 29px;
+  margin-top: 16.5px;
+}
+.li-1:hover {
+  background-color: var(--text-hover);
+  border-left: 3px solid var(--text-hover-left);
+}
+.li-1:hover a {
+  color: var(--text-hover-left);
+}
+.li-1:hover svg {
+  fill: var(--text-hover-left);
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.switch input{
+  width: 50px;
+  height: 25px;
+  margin-top: 16px;
+  margin-left: 15px;
+  appearance: none;
+  padding: 2.5px 2.5px;
+  border-radius: 15px;
+  background-color: #a4a6b3;
+  cursor: pointer;
+}
+.switch input::after{
+  content: '';
+  width: 25px;
+  height: 20px;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: var(--aside-color);
+  transition: 0.5s;
+}
+.switch input:checked::after{
+  margin-left: 20px;
+  background-color: #fff;
+}
+.switch input:checked{
+  background-color: var(--text-color);
+}
